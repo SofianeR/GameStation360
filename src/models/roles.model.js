@@ -18,3 +18,6 @@ const ROLES = [
     Permissions[1],
   ],
 ]
+
+
+export default ROLES
