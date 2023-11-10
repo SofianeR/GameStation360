@@ -1,6 +1,20 @@
+const Permissions = require("./permissions.model")
+
 const ROLES = [
-  "ADMIN": 1111,
-  "MODO": 1110,
-  "GAMEHOST": 1100,
-  "JOUEUR": 1000,
+  "ADMIN": [
+  ...Permissions
+  ],
+  "MODO": [
+    Permissions[1],
+    Permissions[2]
+    Permissions[3]
+  ],
+  "GAMEHOST": [
+    Permissions[5],
+    Permissions[4]
+    Permissions[3]
+  ],
+  "JOUEUR": [
+    Permissions[1],
+  ],
 ]
