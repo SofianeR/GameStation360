@@ -8,3 +8,6 @@ const Permissions = [
   "send-chat-message",
   "read-chat-message"
 ]
+
+
+export default Permissions
