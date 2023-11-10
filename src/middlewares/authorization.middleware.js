@@ -4,7 +4,7 @@ const Authorization = (...allowedRoles) => {
       return res.status(401);
     } else {
       const rolesArray = [...allowedRoles];
-      const result = req.roles.map((role) => rolesArray.include(roles)).find(val => val === true);
+      const result = req.roles.map((role) => rolesArray.include(role)).find(val => val === true);
 
       if(!result) {
         // si le status n'est pas auth envoie d'un err 
